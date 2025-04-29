@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.5s, color 0.5s;
+  }
+  
+  .light-theme {
+    background: #f3e8ff;
+    color: #5e2b97;
+  }
+  
+  .dark-theme {
+    background: #2e003e;
+    color: #e0b3ff;
+  }
+  
+  .header {
+    padding: 1rem;
+    background: linear-gradient(45deg, #e0b3ff, #a366ff);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .theme-button {
+    background: transparent;
+    border: 2px solid #5e2b97;
+    color: #5e2b97;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .theme-button:hover {
+    background: #5e2b97;
+    color: white;
+  }
+  
+  .content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .tile {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .tile:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0px 12px 25px rgba(0,0,0,0.2);
+  }
+  
+  .tile-button {
+    margin-top: 1rem;
+    background: linear-gradient(45deg, #d17fff, #8e2de2);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .tile-button:hover {
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+  }
+  
